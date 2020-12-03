@@ -17,7 +17,7 @@ namespace Learn_Colemak
 				currentCorrectChar = args[new Random().Next(args.Length)][0];
 				while (currentKey.Key != ConsoleKey.Escape && currentChar != currentCorrectChar) {
 					Console.Clear();
-					Console.WriteLine($"Correct: {numCorrect}  Incorrect: {numIncorrect}  {currentCorrectChar}");
+					Console.WriteLine($"Correct: {numCorrect}  Incorrect: {numIncorrect}\n{currentCorrectChar}");
 					currentKey = Console.ReadKey();
 					currentChar = currentKey.KeyChar;
 					if (currentChar == currentCorrectChar) {
